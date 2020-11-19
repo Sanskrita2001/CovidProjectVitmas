@@ -1,10 +1,11 @@
 body {
-	background: #7d26cd !important;
+	background: #1a83ff !important;
 	/* background: radial-gradient(#e5e5e5, #fff, #e5e5e5); */
 }
 .card {
 	width: 80% !important;
 	height: 90% !important;
+	margin: 0 auto !important;
 	background: #27293d !important;
 	box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.1) !important;
 }
