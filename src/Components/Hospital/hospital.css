@@ -1,0 +1,8 @@
+.card {
+	margin: 0 auto !important;
+	background: papayawhip !important;
+	box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.1) !important;
+}
+.card-title {
+	color: palevioletred !important;
+}
