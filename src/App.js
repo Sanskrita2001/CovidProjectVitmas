@@ -3,11 +3,10 @@ import Main from './Main';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HomePage from './Components/layouts/Homepage';
 import Nav_bar from './Components/layouts/Nav_bar';
-import Map from './Components/map/Map';
 import Beds from './Components/Hospital/Beds';
+import Form from './Components/Contact/Form';
 
 const App = () => {
-	const [details, setDetails] = useState([]);
 	return (
 		<div>
 			<BrowserRouter>
@@ -19,10 +18,12 @@ const App = () => {
 					<Route exact path='/hospitals'>
 						<Beds />
 					</Route>
-					<Main details={details} />
+					<Route exact path='/contact'>
+						<Form />
+					</Route>
+					<Main />
 				</Switch>
 			</BrowserRouter>
-			<Map details={details} />
 		</div>
 	);
 };

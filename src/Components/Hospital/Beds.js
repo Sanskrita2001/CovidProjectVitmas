@@ -25,9 +25,9 @@ function Beds() {
 		<Styles>
 			<div className='row'>
 				{dataList.map((value) => (
-					<div className='card col-3 text-center shadow mt-3'>
+					<div className='card-hosp col-3 text-center shadow mt-3'>
 						<div className='card-body '>
-							<h4 className='card-title '>{value.state}</h4>
+							<h4 className='card-hosp-title '>{value.state}</h4>
 							<hr style={{ color: '#fffff' }}></hr>
 							<div className='card-main row'>
 								<div className='col-12 text-info'>

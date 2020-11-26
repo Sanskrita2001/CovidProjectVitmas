@@ -1,11 +1,11 @@
 import React from 'react';
 import './card-style.css';
-import {Link} from "react-router-dom"
+import { Link } from 'react-router-dom';
 
 function State({ value }) {
 	const rate = Math.floor((value.recovered / value.confirmed) * 100);
 	return (
-		<div className='card text-center shadow mb-5'>
+		<div className='card text-center shadow mt-5'>
 			<div className='card-body '>
 				<h4 className='card-title '>{value.state}</h4>
 				<div className='card-main row'>
@@ -25,7 +25,10 @@ function State({ value }) {
 						<p>Recovery Rate: {rate}%</p>
 					</div>
 				</div>
-				<Link to={`/states/${value.id}`} className='btn btn-outline-info text-center'>
+				<Link
+					to={`/states/${value.id}`}
+					className='btn btn-outline-info text-center'
+				>
 					More Details
 				</Link>
 			</div>

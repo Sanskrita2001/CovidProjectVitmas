@@ -1,6 +1,11 @@
 body {
-	background: #1a83ff !important;
+	/* background: #1a83ff !important; */
 	/* background: radial-gradient(#e5e5e5, #fff, #e5e5e5); */
+	background: linear-gradient(
+		90deg,
+		rgb(39, 176, 255) 0%,
+		rgb(0, 232, 236) 100%
+	) !important;
 }
 .card {
 	width: 80% !important;
