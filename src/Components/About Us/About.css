@@ -1,0 +1,18 @@
+.container {
+	background: rgba(5, 5, 5, 0.7);
+	border-radius: 5px;
+	margin: 5% auto;
+}
+.About-para {
+	font-size: 1.5rem;
+	padding: 10px;
+}
+hr {
+	background-color: aqua !important;
+}
+p {
+	padding: 10px;
+}
+.container-fluid {
+	background-image: url('./Assets/bg-1.jpg');
+}
