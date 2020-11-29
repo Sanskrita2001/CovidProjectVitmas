@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Team from './TeamUI';
 import img1 from './Assets/me.jpg';
 import img2 from './Assets/Atrijo.png';
+import img3 from './Assets/Sreyan.jpeg'
 
 export default class Teams extends Component {
     render() {
@@ -15,7 +16,7 @@ export default class Teams extends Component {
                         <Team imgsrc={ img2} title='Atrijo Gangopadhay' link='https://github.com/atrijo2001/'/>
                     </div>
                     <div className="col-md-4">
-                        <Team  title='Sreyan Ghosh' link='https://github.com/sreyan-ghosh/'/>
+                        <Team imgsrc={img3} title='Sreyan Ghosh' link='https://github.com/sreyan-ghosh/'/>
                     </div>
                 </div>
             </div>
