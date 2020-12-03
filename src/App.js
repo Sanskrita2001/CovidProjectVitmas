@@ -6,6 +6,7 @@ import Nav_bar from './Components/layouts/Nav_bar';
 import Beds from './Components/Hospital/Beds';
 import Form from './Components/Contact/Form';
 import About from './Components/About Us/About';
+import Login from './Components/Login/login';
 
 const App = () => {
 	return (
@@ -24,6 +25,9 @@ const App = () => {
 					</Route>
 					<Route exact path='/contact'>
 						<Form />
+					</Route>
+					<Route exact path='/login'>
+						<Login />
 					</Route>
 					<Main />
 				</Switch>

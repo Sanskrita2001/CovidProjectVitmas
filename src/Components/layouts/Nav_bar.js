@@ -48,7 +48,7 @@ function Nav_bar() {
 					<IconContext.Provider value={{ color: '#fff' }}>
 						<div className='navbar'>
 							<Link to='#' className='menu-bars'>
-								<FaIcons.FaBars onClick={showSidebar} />
+								<FaIcons.FaBars onClick={showSidebar} style={{marginTop:"-9px",marginLeft:"-6px"}}/>
 							</Link>
 						</div>
 						<nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
@@ -60,10 +60,10 @@ function Nav_bar() {
 								</li>
 								{SidebarData.map((item, index) => {
 									return (
-										<li key={index} className={item.cName}>
+										<li key={index} className={item.cName} style={{textDecoration:"none"}}>
 											<Link to={item.path}>
 												{item.icon}
-												<span>{item.title}</span>
+												<span >{item.title}</span>
 											</Link>
 										</li>
 									);
@@ -71,7 +71,7 @@ function Nav_bar() {
 							</ul>
 						</nav>
 					</IconContext.Provider>
-					<Navbar.Brand href='/'>Covid 19</Navbar.Brand>
+					<Navbar.Brand href='/' style={{fontFamily:"Rubik,sans-serif"}}>COVIDATOR</Navbar.Brand>
 					<Form className='form-center'>
 						<FormControl type='text' placeholder='Search' className='' />
 					</Form>
